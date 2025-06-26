@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+        }
+        
+        @media print {
+            body {
+                padding: 0.5in;
+                font-size: 10pt;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .contact-info {
+            font-size: 10pt;
+            color: #666;
+            margin-top: 8px;
+        }
+        
+        .contact-info span {
+            margin: 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .summary {
+            font-style: italic;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        
+        .skills-column ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        
+        .skills-column li {
+            margin-bottom: 3px;
+        }
+        
+        .experience-item {
+            margin-bottom: 15px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 12pt;
+            color: #2c3e50;
+        }
+        
+        .job-dates {
+            font-size: 10pt;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .company-location {
+            font-size: 11pt;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        .job-responsibilities {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        
+        .job-responsibilities li {
+            margin-bottom: 4px;
+        }
+        
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+        
+        .degree {
+            font-weight: bold;
+        }
+        
+        .school {
+            color: #555;
+        }
+        
+        .year {
+            font-size: 10pt;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .cert-item {
+            margin-bottom: 8px;
+        }
+        
+        .cert-name {
+            font-weight: bold;
+        }
+        
+        .cert-issuer {
+            color: #555;
+            font-size: 10pt;
+        }
+        
+        .additional-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .additional-item h3 {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .additional-item ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        
+        .additional-item li {
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Full Name</h1>
+        <div class="contact-info">
+            <span>your.email@example.com</span>
+            <span>•</span>
+            <span>(555) 123-4567</span>
+            <span>•</span>
+            <span>linkedin.com/in/yourprofile</span>
+            <span>•</span>
+            <span>City, State</span>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Brief professional summary highlighting your key qualifications, years of experience, and primary areas of expertise. Focus on your most relevant skills and achievements that align with your target role.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skills-column">
+                <ul>
+                    <li>Technical Skill 1</li>
+                    <li>Technical Skill 2</li>
+                    <li>Technical Skill 3</li>
+                    <li>Technical Skill 4</li>
+                </ul>
+            </div>
+            <div class="skills-column">
+                <ul>
+                    <li>Software/Tool 1</li>
+                    <li>Software/Tool 2</li>
+                    <li>Software/Tool 3</li>
+                    <li>Software/Tool 4</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Work Experience</h2>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Job Title</span>
+                <span class="job-dates">Month Year - Present</span>
+            </div>
+            <div class="company-location">Company Name | City, State</div>
+            <ul class="job-responsibilities">
+                <li>Achievement or responsibility with quantifiable results when possible</li>
+                <li>Another key accomplishment or duty that demonstrates your impact</li>
+                <li>Additional responsibility that showcases relevant skills</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Previous Job Title</span>
+                <span class="job-dates">Month Year - Month Year</span>
+            </div>
+            <div class="company-location">Previous Company Name | City, State</div>
+            <ul class="job-responsibilities">
+                <li>Key achievement with specific metrics or outcomes</li>
+                <li>Important responsibility that highlights transferable skills</li>
+                <li>Additional accomplishment relevant to your career goals</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Earlier Job Title</span>
+                <span class="job-dates">Month Year - Month Year</span>
+            </div>
+            <div class="company-location">Earlier Company Name | City, State</div>
+            <ul class="job-responsibilities">
+                <li>Notable accomplishment or responsibility</li>
+                <li>Additional relevant experience or achievement</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <div>
+                <span class="degree">Degree Name</span>
+                <div class="school">University/College Name</div>
+            </div>
+            <span class="year">Year</span>
+        </div>
+        
+        <div class="education-item">
+            <div>
+                <span class="degree">Additional Degree/Certification</span>
+                <div class="school">Institution Name</div>
+            </div>
+            <span class="year">Year</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Certifications & Projects</h2>
+        <div class="cert-item">
+            <div class="cert-name">Certification Name</div>
+            <div class="cert-issuer">Issuing Organization, Year</div>
+        </div>
+        
+        <div class="cert-item">
+            <div class="cert-name">Notable Project Name</div>
+            <div class="cert-issuer">Brief description of project and technologies used</div>
+        </div>
+        
+        <div class="cert-item">
+            <div class="cert-name">Additional Certification</div>
+            <div class="cert-issuer">Issuing Organization, Year</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Additional Information</h2>
+        <div class="additional-grid">
+            <div class="additional-item">
+                <h3>Languages</h3>
+                <ul>
+                    <li>English (Native)</li>
+                    <li>Language 2 (Proficiency Level)</li>
+                    <li>Language 3 (Proficiency Level)</li>
+                </ul>
+            </div>
+            <div class="additional-item">
+                <h3>Achievements</h3>
+                <ul>
+                    <li>Professional award or recognition</li>
+                    <li>Notable accomplishment</li>
+                    <li>Volunteer leadership role</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
