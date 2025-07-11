@@ -16,17 +16,19 @@
       font-size: 10pt;
       line-height: 1.3;
       color: #333;
-      width: 8.27in;
+      width: 210mm;
+      height: 297mm;
       margin: 0 auto;
       padding: 0.5in;
       background: white;
       -webkit-print-color-adjust: exact;
+      overflow: hidden;
     }
 
     @media print {
       @page {
-        size: A4;
-        margin: 0.5in;
+        size: 210mm 297mm;
+        margin: 15mm;
       }
       body {
         padding: 0.5in;
@@ -299,17 +301,6 @@
   </section>
 
   <section class="section">
-    <h2>Relevant Coursework</h2>
-    <ul>
-      <li>Artificial Intelligence</li>
-      <li>Computer Vision</li>
-      <li>Machine Learning</li>
-      <li>Embedded Systems</li>
-      <li>Data Structures and Algorithms</li>
-    </ul>
-  </section>
-
-  <section class="section">
     <h2>Volunteering</h2>
     <div class="experience-item">
       <div class="job-header">
@@ -321,28 +312,5 @@
       </ul>
     </div>
   </section>
-
-  <!-- <section class="section">
-    <h2>Additional Information</h2>
-    <div class="additional-grid">
-      <div class="additional-item">
-        <h3>Hobbies</h3>
-        <ul>
-          <li>Astro Photography</li>
-          <li>Cinematography</li>
-          <li>Video Editing</li>
-          <li>Drawing</li>
-        </ul>
-      </div>
-      <div class="additional-item">
-        <h3>Languages</h3>
-        <ul>
-          <li>English (Professional)</li>
-          <li>Hindi (Native)</li>
-          <li>Urdu (Native)</li>
-        </ul>
-      </div>
-    </div>
-  </section> -->
 </body>
 </html>
