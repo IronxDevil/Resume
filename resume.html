@@ -32,8 +32,7 @@
       }
       body {
         padding: 0.5in;
-        font-size: 9pt;
-        line-height: 1.2;
+        font-size: 9.5pt;
       }
       .section {
         page-break-inside: avoid;
@@ -48,10 +47,16 @@
     }
 
     h1.name {
-      font-size: 16pt;
+      font-size: 18pt;
       font-weight: bold;
       margin-bottom: 4px;
       color: #2c3e50;
+    }
+
+    .job-title-line {
+      font-size: 10pt;
+      color: #444;
+      margin-top: 2px;
     }
 
     .contact-info {
@@ -70,7 +75,7 @@
     }
 
     h2 {
-      font-size: 10.5pt;
+      font-size: 11.5pt;
       font-weight: bold;
       color: #2c3e50;
       border-bottom: 1px solid #bdc3c7;
@@ -91,7 +96,7 @@
     }
 
     ul li {
-      margin-bottom: 0.3px !important;
+      margin-bottom: 0.5px !important;
     }
 
     .experience-item {
@@ -107,7 +112,7 @@
 
     .job-title {
       font-weight: bold;
-      font-size: 9.5pt;
+      font-size: 10pt;
       color: #2c3e50;
     }
 
@@ -149,6 +154,13 @@
       line-height: 1.1;
     }
 
+    .cert-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
     .cert-name {
       font-weight: bold;
     }
@@ -156,11 +168,30 @@
     .cert-issuer {
       color: #555;
       font-size: 9pt;
+      font-style: italic;
     }
 
     .skills-column ul {
-      list-style-type: disc;
-      margin-left: 18px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .skills-column li {
+      margin-bottom: 4px;
+      position: relative;
+      padding-left: 120px;
+      text-indent: 0;
+      font-size: 10pt;
+      line-height: 1.2;
+    }
+
+    .skill-label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+      width: 120px;
     }
 
     .additional-grid {
@@ -186,12 +217,11 @@
 <body>
   <header>
     <h1 class="name">Sharique Hussain</h1>
+    <div class="job-title-line">Aspiring Computer Vision Engineer | Embedded Systems Developer</div>
     <div class="contact-info">
       <span>Email: 786shariquehussain@gmail.com</span>
       <span>•</span>
-      <span>Contact: +91 9717970475</span>
-      <span>•</span>
-      <span>Address: Jaitpur, Delhi</span><br/>
+      <span>Contact: +91 9717970475</span><br/>
       <span>LinkedIn: linkedin.com/in/shariquehussain-</span>
       <span>•</span>
       <span>GitHub: github.com/IronxDevil</span>
@@ -229,40 +259,46 @@
   <section class="section">
     <h2>Technical Skills</h2>
     <div class="skills-column">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-        <ul>
-          <li>Programming: Python, Embedded C, HTML, CSS, JavaScript</li>
-          <li>Framework: TensorFlow, YOLO, Flask</li>
-          <li>Libraries: NumPy, Pandas, Matplotlib, OpenCV, DeepFace, Ultralytics</li>
-        </ul>
-        <ul>
-          <li>Microprocessors: Arduino, ESP32, Raspberry Pi</li>
-          <li>Tools: Git/GitHub, Streamlit, Jupyter Notebook, Arduino IDE, VS Code, Cursor</li>
-        </ul>
-      </div>
+      <ul>
+        <li><span class="skill-label">Programming:</span> Python, Embedded C, HTML, CSS, JavaScript</li>
+        <li><span class="skill-label">Framework:</span> TensorFlow, YOLO, Flask</li>
+        <li><span class="skill-label">Libraries:</span> NumPy, Pandas, Matplotlib, OpenCV, DeepFace, Ultralytics</li>
+        <li><span class="skill-label">Microprocessors:</span> Arduino, ESP32, Raspberry Pi</li>
+        <li><span class="skill-label">Tools:</span> Git/GitHub, Streamlit, Jupyter Notebook, Arduino IDE, VS Code, Cursor</li>
+        <!-- <li><span class="skill-label">Operating System:</span> Windows • macOS • RaspbianOS</li> -->
+        <!-- <li><span class="skill-label">Visual Tools:</span> Figma • Canva • Photoshop • Lightroom • Premiere Pro</li> -->
+      </ul>
     </div>
   </section>
 
   <section class="section">
     <h2>Certifications</h2>
     <div class="cert-item">
-      <div class="cert-name">Introduction to Generative AI & Level 3 Prompt Engineering</div>
-      <div class="cert-issuer">Google Cloud, 2023</div>
+      <div class="cert-header">
+        <span class="cert-name">Introduction to Generative AI & Level 3 Prompt Engineering</span>
+        <span class="cert-issuer">Google Cloud, 2023</span>
+      </div>
     </div>
 
     <div class="cert-item">
-      <div class="cert-name">Cloud Computing Foundations</div>
-      <div class="cert-issuer">Google Cloud, 2023</div>
+      <div class="cert-header">
+        <span class="cert-name">Cloud Computing Foundations</span>
+        <span class="cert-issuer">Google Cloud, 2023</span>
+      </div>
     </div>
 
     <div class="cert-item">
-      <div class="cert-name">Industrial Communication Protocols and Connectivity</div>
-      <div class="cert-issuer">Dysmech, 2023</div>
+      <div class="cert-header">
+        <span class="cert-name">Industrial Communication Protocols and Connectivity</span>
+        <span class="cert-issuer">Dysmech, 2023</span>
+      </div>
     </div>
 
     <div class="cert-item">
-      <div class="cert-name">IIoT using ThingWorx</div>
-      <div class="cert-issuer">Dysmech, 2022</div>
+      <div class="cert-header">
+        <span class="cert-name">IIoT using ThingWorx</span>
+        <span class="cert-issuer">Dysmech, 2022</span>
+      </div>
     </div>
   </section>
 
@@ -270,11 +306,11 @@
     <h2>Academic Projects</h2>
     <div class="experience-item">
       <div class="job-header">
-        <span class="job-title">Computer Vision Project: Object Detection Model for Space Station</span>
+        <span class="job-title">Computer Vision: Object Detection Model for Space Station</span>
         <span class="job-dates">2025</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Built a high-accuracy object detection system powered by YOLOv8, tailored to identify various objects within a simulated space station environment.</li>
+        <li>Engineered a high-accuracy object detection system powered by YOLOv8, tailored to identify various objects within a simulated space station environment.</li>
         <li>Implemented a multi-model approach, training separate YOLOv8 models for different object classes to improve precision and minimize false positives. Achieved a mean Average Precision (mAP@50) of 0.994, reflecting strong model performance and reliability.</li>
         <li>Deployed the system as a web application with FastAPI (backend) and React.js (frontend), enabling real-time detection via browser interface. Demonstrated expertise in computer vision, deep learning, model deployment and full-stack development.</li>
       </ul>
@@ -282,11 +318,11 @@
 
     <div class="experience-item">
       <div class="job-header">
-        <span class="job-title">Embedded Systems Project: Hand Gesture Controlled Car</span>
+        <span class="job-title">Embedded Systems: Hand Gesture Controlled Car</span>
         <span class="job-dates">2024</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Designed and implemented a gesture-based wireless robotic car using embedded systems and real-time motion control. Engineered a wearable controller based on the ADXL335 accelerometer sensor, transmitting gesture data via nRF24L01 RF modules to a receiver on the car.</li>
+        <li>Prototyped a gesture-based wireless robotic car leveraging embedded systems and real-time motion control. Engineered a wearable controller based on the ADXL335 accelerometer sensor, transmitting gesture data via nRF24L01 RF modules to a receiver on the car.</li>
         <li>Used Arduino to process motion data and control the L298N motor driver, enabling accurate speed and direction control based on hand gestures.</li>
         <li>Addressed challenges such as gesture calibration, noise filtering, and synchronization of hardware components for smooth and responsive operation.</li>
       </ul>
@@ -294,11 +330,11 @@
 
     <div class="experience-item">
       <div class="job-header">
-        <span class="job-title">Embedded Systems Project: Labyrinth – Maze Navigation</span>
+        <span class="job-title">Embedded Systems: Labyrinth – Maze Navigation</span>
         <span class="job-dates">2022</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Designed and built a physical maze game where the platform tilts along X and Y axes in response to joystick input.</li>
+        <li>Developed a physical maze platform that tilts along X and Y axes in response to joystick input.</li>
         <li>Integrated servo motors with Arduino for directional control and calibrated tilt angles for smooth maze navigation.</li>
         <li>Implemented real-time control system logic to translate joystick movement into precise servo angle adjustments.</li>
         <li>Enhanced engagement through intuitive gameplay mechanics and responsive hardware interaction.</li>
@@ -314,9 +350,7 @@
         <span class="job-dates">Jul 2024 - Present</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Produced short-form and long-form video content, contributing to community engagement and digital outreach.</li>
-        <li>Collaborated with a creative team to plan, design, and deliver high-quality media assets for technical events and social platforms.</li>
-        <li>Demonstrated strong teamwork, communication, and content strategy skills while supporting GDG Noida’s branding efforts.</li>
+        <li>Collaborated with GDG Noida’s creative team to produce engaging video content across short-form and long-form formats, supporting branding, outreach, and community engagement.</li>
       </ul>
     </div>
   </section>
