@@ -19,7 +19,7 @@
       width: 210mm;
       height: 297mm;
       margin: 0 auto;
-      padding: 0.5in;
+      padding: 0.2in 0.5in 0.5in 0.5in;
       background: white;
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
@@ -27,11 +27,12 @@
 
     @media print {
       @page {
-        size: 210mm 297mm;
-        margin: 15mm;
+        size: A4;
+        margin: 10mm;
       }
       body {
-        padding: 0.5in;
+        margin: 0 !important;
+        padding: 0.3in 0.5in 0.5in 0.5in !important;
         font-size: 9.5pt;
       }
       .section {
@@ -231,7 +232,7 @@
   <section class="section">
     <h2>Professional Summary</h2>
     <p class="summary">
-      Strong interest in robotics, computer vision and embedded systems. Experienced in developing and optimising AI applications, integrating computer vision with hardware and translating theory into practical solutions. Skilled in agile methods and cross-functional teamwork with a passion for building intelligent real-world systems.
+      Strong interest in robotics, computer vision, and embedded systems. Experienced in developing and optimising AI applications, integrating computer vision with hardware, and translating theory into practical solutions. Skilled in agile methods and cross-functional teamwork with a passion for building intelligent real-world systems.
     </p>
   </section>
 
@@ -310,9 +311,9 @@
         <span class="job-dates">2025</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Engineered a high-accuracy object detection system powered by YOLOv8, tailored to identify various objects within a simulated space station environment.</li>
-        <li>Implemented a multi-model approach, training separate YOLOv8 models for different object classes to improve precision and minimize false positives. Achieved a mean Average Precision (mAP@50) of 0.994, reflecting strong model performance and reliability.</li>
-        <li>Deployed the system as a web application with FastAPI (backend) and React.js (frontend), enabling real-time detection via browser interface. Demonstrated expertise in computer vision, deep learning, model deployment and full-stack development.</li>
+        <li>Engineered a high-accuracy object detection model powered by YOLOv8, tailored to detect diverse objects in a simulated space station environment.</li>
+        <li>Adopted a multi-model approach, training separate YOLOv8 models for different object classes to improve precision and minimize false positives. Achieved a mean Average Precision (mAP@50) of 0.994, reflecting strong model performance and reliability.</li>
+        <li>Deployed the system as a web application with FastAPI (backend) and React.js (frontend), enabling real-time detection via browser interface. Demonstrated expertise in computer vision, deep learning, model deployment, and full-stack development.</li>
       </ul>
     </div>
 
@@ -323,8 +324,8 @@
       </div>
       <ul class="job-responsibilities">
         <li>Prototyped a gesture-based wireless robotic car leveraging embedded systems and real-time motion control. Engineered a wearable controller based on the ADXL335 accelerometer sensor, transmitting gesture data via nRF24L01 RF modules to a receiver on the car.</li>
-        <li>Used Arduino to process motion data and control the L298N motor driver, enabling accurate speed and direction control based on hand gestures.</li>
-        <li>Addressed challenges such as gesture calibration, noise filtering, and synchronization of hardware components for smooth and responsive operation.</li>
+        <li>Used Arduino to process motion data and operate the L298N motor driver, enabling accurate speed and movement based on hand gestures.</li>
+        <li>Addressed challenges such as gesture calibration, noise filtering, and synchronization of hardware components, ensuring smooth and responsive operation.</li>
       </ul>
     </div>
 
@@ -334,10 +335,10 @@
         <span class="job-dates">2022</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Developed a physical maze platform that tilts along X and Y axes in response to joystick input.</li>
-        <li>Integrated servo motors with Arduino for directional control and calibrated tilt angles for smooth maze navigation.</li>
-        <li>Implemented real-time control system logic to translate joystick movement into precise servo angle adjustments.</li>
-        <li>Enhanced engagement through intuitive gameplay mechanics and responsive hardware interaction.</li>
+        <li>Constructed a physical maze platform that tilts along X and Y axes in response to joystick input.</li>
+        <li>Integrated servo motors with Arduino for directional management and calibrated tilt angles for smooth maze navigation.</li>
+        <li>Programmed real-time control logic to translate joystick movement into precise servo angle adjustments.</li>
+        <li>Enhanced engagement through intuitive control mechanics and responsive hardware interaction.</li>
       </ul>
     </div>
   </section>
@@ -350,7 +351,7 @@
         <span class="job-dates">Jul 2024 - Present</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Collaborated with GDG Noida’s creative team to produce engaging video content across short-form and long-form formats, supporting branding, outreach, and community engagement.</li>
+        <li>Collaborated with GDG Noida’s creative team to produce 20+ engaging videos across short-form and long-form formats, boosting social media engagement by 30% and supporting branding, outreach, and community growth.</li>
       </ul>
     </div>
   </section>
