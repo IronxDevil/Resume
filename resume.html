@@ -23,7 +23,6 @@
       background: white;
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
-      overflow: hidden;
     }
 
     @media print {
@@ -33,7 +32,8 @@
       }
       body {
         padding: 0.5in;
-        font-size: 9.5pt;
+        font-size: 9pt;
+        line-height: 1.2;
       }
       .section {
         page-break-inside: avoid;
@@ -48,7 +48,7 @@
     }
 
     h1.name {
-      font-size: 18pt;
+      font-size: 16pt;
       font-weight: bold;
       margin-bottom: 4px;
       color: #2c3e50;
@@ -66,11 +66,11 @@
     }
 
     .section {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     h2 {
-      font-size: 11.5pt;
+      font-size: 10.5pt;
       font-weight: bold;
       color: #2c3e50;
       border-bottom: 1px solid #bdc3c7;
@@ -91,7 +91,7 @@
     }
 
     ul li {
-      margin-bottom: 0.5px !important;
+      margin-bottom: 0.3px !important;
     }
 
     .experience-item {
@@ -107,7 +107,7 @@
 
     .job-title {
       font-weight: bold;
-      font-size: 10pt;
+      font-size: 9.5pt;
       color: #2c3e50;
     }
 
@@ -229,15 +229,17 @@
   <section class="section">
     <h2>Technical Skills</h2>
     <div class="skills-column">
-      <ul>
-        <li>Programming: Python, Embedded C, HTML, CSS, JavaScript</li>
-        <li>Framework: TensorFlow, YOLO, Flask</li>
-        <li>Libraries: NumPy, Pandas, Matplotlib, OpenCV, DeepFace, Ultralytics</li>
-        <li>Microprocessors: Arduino, ESP32, Raspberry Pi</li>
-        <li>Tools: Git/GitHub, Streamlit, Jupyter Notebook, Arduino IDE, VS Code, Cursor</li>
-        <!-- <li>Operating System: Windows • macOS • RaspbianOS</li> -->
-        <!-- <li>Visual Tools: Figma • Canva • Photoshop • Lightroom • Premiere Pro</li> -->
-      </ul>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+        <ul>
+          <li>Programming: Python, Embedded C, HTML, CSS, JavaScript</li>
+          <li>Framework: TensorFlow, YOLO, Flask</li>
+          <li>Libraries: NumPy, Pandas, Matplotlib, OpenCV, DeepFace, Ultralytics</li>
+        </ul>
+        <ul>
+          <li>Microprocessors: Arduino, ESP32, Raspberry Pi</li>
+          <li>Tools: Git/GitHub, Streamlit, Jupyter Notebook, Arduino IDE, VS Code, Cursor</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -272,9 +274,9 @@
         <span class="job-dates">2025</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Developed a high-accuracy object detection system using YOLOv8, customized for identifying various objects in a simulated space station environment.</li>
+        <li>Built a high-accuracy object detection system powered by YOLOv8, tailored to identify various objects within a simulated space station environment.</li>
         <li>Implemented a multi-model approach, training separate YOLOv8 models for different object classes to improve precision and minimize false positives. Achieved a mean Average Precision (mAP@50) of 0.994, reflecting strong model performance and reliability.</li>
-        <li>Deployed the system as a web application using FastAPI (backend) and React.js (frontend), enabling real-time detection via browser interface. Demonstrated expertise in computer vision, deep learning, model deployment and full-stack development.</li>
+        <li>Deployed the system as a web application with FastAPI (backend) and React.js (frontend), enabling real-time detection via browser interface. Demonstrated expertise in computer vision, deep learning, model deployment and full-stack development.</li>
       </ul>
     </div>
 
@@ -284,7 +286,7 @@
         <span class="job-dates">2024</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Designed and implemented a gesture-based wireless robotic car using embedded systems and real-time motion control. Developed a wearable controller using the ADXL335 accelerometer sensor, transmitting gesture data via nRF24L01 RF modules to a receiver on the car.</li>
+        <li>Designed and implemented a gesture-based wireless robotic car using embedded systems and real-time motion control. Engineered a wearable controller based on the ADXL335 accelerometer sensor, transmitting gesture data via nRF24L01 RF modules to a receiver on the car.</li>
         <li>Used Arduino to process motion data and control the L298N motor driver, enabling accurate speed and direction control based on hand gestures.</li>
         <li>Addressed challenges such as gesture calibration, noise filtering, and synchronization of hardware components for smooth and responsive operation.</li>
       </ul>
@@ -292,12 +294,14 @@
 
     <div class="experience-item">
       <div class="job-header">
-        <span class="job-title">Game Development Project: Labyrinth - Maze Game</span>
+        <span class="job-title">Embedded Systems Project: Labyrinth – Maze Navigation</span>
         <span class="job-dates">2022</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Maze tilts on X/Y axes via servos based on joystick input.</li>
-        <li>Calibrated tilt angles and synchronized motor movement.</li>
+        <li>Designed and built a physical maze game where the platform tilts along X and Y axes in response to joystick input.</li>
+        <li>Integrated servo motors with Arduino for directional control and calibrated tilt angles for smooth maze navigation.</li>
+        <li>Implemented real-time control system logic to translate joystick movement into precise servo angle adjustments.</li>
+        <li>Enhanced engagement through intuitive gameplay mechanics and responsive hardware interaction.</li>
       </ul>
     </div>
   </section>
@@ -310,7 +314,9 @@
         <span class="job-dates">Jul 2024 - Present</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Created short-form and long-form videos, boosting engagement and contributing to digital branding.</li>
+        <li>Produced short-form and long-form video content, contributing to community engagement and digital outreach.</li>
+        <li>Collaborated with a creative team to plan, design, and deliver high-quality media assets for technical events and social platforms.</li>
+        <li>Demonstrated strong teamwork, communication, and content strategy skills while supporting GDG Noida’s branding efforts.</li>
       </ul>
     </div>
   </section>
