@@ -22,23 +22,23 @@
       height: 100vh;
       margin: auto;
       background: #fff;
-      padding: 10px;
+      padding: 16px;
       display: flex;
       flex-direction: row;
       gap: 10px;
       box-sizing: border-box;
     }
-    .sidebar {
-      width: 32%;
-      background: #0077a3;
-      color: #fff;
-      padding: 12px;
+    .sidebar, .main {
+      padding: 16px;
       box-sizing: border-box;
     }
+    .sidebar {
+      width: 38%;
+      background: #0077a3;
+      color: #fff;
+    }
     .main {
-      width: 68%;
-      padding: 12px;
-      box-sizing: border-box;
+      width: 62%;
     }
     h1, h2, h3 {
       margin-top: 0;
@@ -52,19 +52,58 @@
     h3 {
       font-size: 11pt;
     }
+
+    /* Slightly reduced font sizes for right column (main) */
+    .main h1 {
+      font-size: 19pt;
+    }
+    .main h2 {
+      font-size: 14pt;
+    }
+    .main h3 {
+      font-size: 12pt;
+    }
+    .main p,
+    .main li {
+      font-size: 11pt;
+    }
     .section {
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
     .section h2 {
       border-bottom: 2px solid #0077a3;
-      padding-bottom: 5px;
+      padding-bottom: 3px;
     }
     ul {
       padding-left: 16px;
-      margin: 4px 0;
+      margin: 2px 0;
     }
     p {
-      margin: 2px 0;
+      margin: 3px 0;
+    }
+
+    /* Sidebar spacing refinements */
+    .sidebar .section {
+      margin-bottom: 26px;
+    }
+    .sidebar h2 {
+      margin-bottom: 3px;
+      font-size: 11.5pt;
+    }
+    .sidebar p {
+      margin: 3px 0;
+      font-size: 9.5pt;
+    }
+    .sidebar ul {
+      margin: 0;
+      padding-left: 16px;
+    }
+    .sidebar li {
+      margin-bottom: 3px;
+      font-size: 9.5pt;
+    }
+    .sidebar .section:first-of-type {
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -78,22 +117,17 @@
       <p>🔗 <a href="https://www.linkedin.com/in/pallavi-kumari-a37402238/" style="color: #fff;">linkedin.com/in/pallavikumari</a></p>
 
       <div class="section">
-        <h2>Skills</h2>
+        <h2>Technical Skills</h2>
         <ul>
-          <li>Apex Class, Apex Trigger, Batch Class, Future Method</li>
-          <li>Flow, Validation Rules, Relationship</li>
-          <li>Approval Process</li>
-          <li>Sales Cloud and Service Cloud</li>
-          <li>Salesforce Security</li>
-          <li>Data Loader</li>
-          <li>C, C++, Data Structures</li>
-          <li>Asynchronous and Synchronous Concepts</li>
-          <li>Basic Knowledge of Lightning Web Components (LWC)</li>
-          <li>Business Requirements, Process Mapping, Documentation</li>
-          <li>Attention to Detail</li>
+          <li><strong>Apex</strong> (Class, Trigger, Batch, Future Methods)</li>
+          <li><strong>Flows</strong>, <strong>Process Builder</strong>, Validation Rules</li>
+          <li>Approval Processes &amp; <strong>Security</strong> (Profiles, Roles, OWD)</li>
+          <li><strong>Sales Cloud</strong> &amp; <strong>Service Cloud</strong></li>
+          <li><strong>Data Loader</strong> &amp; Debug Tools</li>
+          <li>Basic <strong>Lightning Web Components (LWC)</strong></li>
+          <li><strong>CRM Documentation</strong> &amp; Process Mapping</li>
         </ul>
       </div>
-
 
       <div class="section">
         <h2>Certifications</h2>
@@ -104,9 +138,21 @@
       </div>
 
       <div class="section">
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Effective Stakeholder Communication</li>
+          <li>Analytical Thinking</li>
+          <li>Agile Team Collaboration</li>
+          <li>Fast Learner in Tech Environments</li>
+          <li>Proactive Issue Identification & Resolution</li>
+          <li>Time-efficient Project Execution</li>
+        </ul>
+      </div>
+
+      <div class="section">
         <h2>Education</h2>
         <p><strong>Bachelor of Computer Applications</strong><br>
-        Aug 2021 – Jul 2024<br>
+        August 2021 – July 2024<br>
         IIMT Group of Colleges, Greater Noida</p>
       </div>
       <div class="section">
@@ -124,8 +170,8 @@
     </div>
 
     <div class="main">
-      <h1>Pallavi Kumari</h1>
-      <h3>Salesforce Developer</h3>
+      <h1 style="margin-bottom: 4px;">Pallavi Kumari</h1>
+      <h3 style="margin-top: 2px;">Salesforce Developer</h3>
 
       <div class="section">
         <h2>Professional Summary</h2>
@@ -133,51 +179,40 @@
         Seeking a challenging opportunity in a growth-oriented organization within the Salesforce Software Development sector, where I can apply my technical and analytical skills to contribute toward achieving business goals. My aim is to foster both professional and personal development while being an integral part of an innovative team.
         </p>
         <p>
-        Adept at leading cross-functional teams, optimizing CRM workflows, and ensuring alignment between business goals and technical execution. Recognized for excellent communication, problem-solving, and leadership skills that contribute to team cohesion and successful outcomes in fast-paced environments.
+          Adept at working in cross-functional teams, optimizing CRM workflows and ensuring alignment between business goals and technical execution. Completed hands-on projects using <strong>Flow</strong>, <strong>Apex</strong> and <strong>Sales Cloud</strong> to demonstrate practical problem-solving. Known for bridging gaps between end users and development teams with clear communication.
         </p>
       </div>
 
       <div class="section">
         <h2>Expertise</h2>
         <ul>
-          <li>Starting from object creation, field & datatype, setting up user permissions, and configuring approval processes.</li>
-          <li>Implemented automation using Flow, Process Builders, and Trigger.</li>
-          <li>Knowledge of Relationship & Page layout</li>
-          <li>Knowledge of Security, Roles, Profile, Permission Set</li>
-          <li>Sharing Rules, Manual Sharing, Group/Queue, OWD</li>
-          <li>Knowledge of Sales Cloud and Service Cloud</li>
-          <li>Knowledge of validation Rule & Formula Field</li>
-          <li>Knowledge of APEX</li>
-          <li>Apex Trigger, Apex Class, Batch Classes, Future Method</li>
-          <li>Concept of synchronous and asynchronous.</li>
-          <li>Salesforce Tools: Flows, Process Builder, Triggers, Validation Rules, Workflow Rules</li>
-          <li>Testing & Coverage: Apex Test Classes, Debug Logs, Developer Console</li>
-          <li>Knowledge of implementing Sales Cloud from lead to Order.</li>
-          <li>Knowledge of Service cloud, i.e. email-to-case, web-to-case, Case management.</li>
-          <li>Started Learning Lightning Web Components (LWC)</li>
+          <li><strong>Custom object</strong> and field creation, page layouts, and relationships</li>
+          <li>User access management through <strong>Roles, Profiles, Permission Sets</strong></li>
+          <li>Automation using <strong>Flow</strong>, <strong>Process Builder</strong>, and <strong>Apex Triggers</strong></li>
+          <li><strong>Sales & Service Cloud</strong> configuration (lead-to-order, case management)</li>
+          <li><strong>Validation Rules</strong>, formula fields, and approval processes</li>
+          <li>Asynchronous processing: <strong>Batch Apex</strong>, <strong>Future Methods</strong></li>
+          <li>Testing & debugging: <strong>Test Classes</strong>, <strong>Debug Logs</strong>, <strong>Developer Console</strong></li>
         </ul>
       </div>
       
       <div class="section">
-      <h2>Academic Projects</h2>
-      <h3 style="display: flex; justify-content: space-between;">
-        <span>Hospital Management System</span>
-        <span style="font-size: 0.85em; opacity: 0.6;">Dec 2023</span>
-      </h3>
-      <p>
-        Designed and developed a full-stack web-based Hospital Management System as part of my BCA program to streamline administrative workflows in hospitals. The system featured modules for appointment scheduling, staff and patient management, and secure data handling.
-      </p>
-      <p>
-        Implemented the backend using <strong>Java</strong> and <strong>JSP/Servlets</strong>, with form validation and session control. Applied principles of <strong>OOP</strong>, database normalization, and security best practices.
-      </p>
-      <p>
-        Modeled the application using <strong>UML Diagrams</strong> (Use Case, Sequence, Class), <strong>ER Diagrams</strong>, and <strong>Data Flow Diagrams</strong> to capture the system design and business logic.
-      </p>
-      <p>
-        Demonstrated project feasibility (technical, operational, economic) and deployed features through an Agile-based implementation plan. Gained hands-on experience with requirement analysis, architecture design, and full SDLC.
-      </p>
-      <p><em>Key Technologies:</em> Java, HTML/CSS, JavaScript, MySQL, JSP/Servlets, Apache Tomcat</p>
-    </div>
+        <h2>Academic Projects</h2>
+        <h3 style="display: flex; justify-content: space-between;">
+          <span>Hospital Management System</span>
+          <span style="font-size: 0.85em; opacity: 0.6;">Dec 2023</span>
+        </h3>
+        <p>
+          Designed and implemented a full-stack Hospital Management System as part of academic coursework to streamline hospital operations such as patient intake, appointment scheduling, and staff coordination.
+        </p>
+        <p>
+          Developed using <strong>Java</strong> and <strong>MySQL</strong>. Features included patient records, doctor availability, billing, appointment booking, and user authentication.
+        </p>
+        <p>
+          Applied object-oriented principles, database normalization, and exception handling to build a robust system that ensures data integrity and user-friendly interaction.
+        </p>
+        <p><em>Key Features:</em> Role-based login, dynamic scheduling, medical history tracking, and real-time billing generation.</p>
+      </div>
   </div>
 </body>
 </html>
