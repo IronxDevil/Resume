@@ -72,7 +72,7 @@
     }
 
     .section {
-      margin-bottom: 6px;
+      margin-bottom: 9px;
     }
 
     h2 {
@@ -181,10 +181,10 @@
     .skills-column li {
       margin-bottom: 4px;
       position: relative;
-      padding-left: 120px;
+      padding-left: 150px;
       text-indent: 0;
       font-size: 10pt;
-      line-height: 1.2;
+      line-height: 1.25;
     }
 
     .skill-label {
@@ -192,7 +192,8 @@
       left: 0;
       top: 0;
       font-weight: bold;
-      width: 120px;
+      width: 135px;
+      white-space: nowrap;
     }
 
     .additional-grid {
@@ -212,44 +213,97 @@
       list-style-type: disc;
       margin-left: 18px;
     }
+    .contact-info a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 </head>
 <body>
   <header>
     <h1 class="name">Sharique Hussain</h1>
-    <div class="job-title-line">Aspiring Computer Vision Engineer | Embedded Systems Developer</div>
+    <div class="job-title-line"> AI & Computer Vision Engineer | Embedded Systems Developer</div>
     <div class="contact-info">
-      <span>Email: 786shariquehussain@gmail.com</span>
-      <span>•</span>
-      <span>Contact: +91 9717970475</span><br/>
-      <span>LinkedIn: linkedin.com/in/shariquehussain-</span>
-      <span>•</span>
-      <span>GitHub: github.com/IronxDevil</span>
-    </div>
+  <span>Email: <a href="mailto:shariquehussain2404@gmail.com">shariquehussain2404@gmail.com</a></span>
+  <span>•</span>
+  <span>Contact: +91 9717970475</span><br/>
+  <span>LinkedIn: <a href="https://www.linkedin.com/in/shariquehussain-" target="_blank">linkedin.com/in/shariquehussain-</a></span>
+  <span>•</span>
+  <span>GitHub: <a href="https://github.com/IronxDevil" target="_blank">github.com/IronxDevil</a></span>
+</div>
   </header>
 
   <section class="section">
     <h2>Professional Summary</h2>
     <p class="summary">
-      Strong interest in robotics, computer vision, and embedded systems. Experienced in developing and optimising AI applications, integrating computer vision with hardware, and translating theory into practical solutions. Skilled in agile methods and cross-functional teamwork with a passion for building intelligent real-world systems.
+      Computer Vision and Embedded Systems engineer with hands-on experience in deep learning–based perception, 
+      real-time object detection and hardware–software integration. 
+      Skilled in deploying AI systems using modern frameworks and edge-compatible workflows, 
+      with a focus on practical, real-world applications.
     </p>
   </section>
 
   <section class="section">
     <h2>Technical Skills</h2>
     <div class="skills-column">
-      <ul>
-        <li><span class="skill-label">Programming:</span> Python, Embedded C, HTML, CSS, JavaScript</li>
-        <li><span class="skill-label">Framework:</span> TensorFlow, YOLO, Flask</li>
-        <li><span class="skill-label">Libraries:</span> NumPy, Pandas, Matplotlib, OpenCV, DeepFace, Ultralytics</li>
-        <li><span class="skill-label">Microprocessors:</span> Arduino, ESP32, Raspberry Pi</li>
-        <li><span class="skill-label">Tools:</span> Git/GitHub, Streamlit, Jupyter Notebook, Arduino IDE, VS Code, Cursor</li>
-        <!-- <li><span class="skill-label">Operating System:</span> Windows • macOS • RaspbianOS</li> -->
-        <!-- <li><span class="skill-label">Visual Tools:</span> Figma • Canva • Photoshop • Lightroom • Premiere Pro</li> -->
+  <ul>
+    <li><span class="skill-label">Programming:</span> Python, Embedded C</li>
+    <li><span class="skill-label">Computer Vision & AI:</span> YOLOv8, OpenCV, TensorFlow, PyTorch</li>
+    <li><span class="skill-label">ML Libraries:</span> NumPy, Pandas, Scikit-learn, Matplotlib</li>
+    <li><span class="skill-label">Web Deployment:</span> FastAPI, Flask, React.js</li>
+    <li><span class="skill-label">Embedded Platforms:</span> Arduino, ESP32, Raspberry Pi</li>
+    <li><span class="skill-label">Tools & Utilities:</span> Git/GitHub, Jupyter Notebook, Streamlit, Arduino IDE, VS Code, Cursor, MS Office</li>
+  </ul>
+</div>
+  </section>
+  
+  <section class="section">
+    <h2>Academic Projects</h2>
+    <div class="experience-item">
+      <div class="job-header">
+        <span class="job-title">Computer Vision: Object Detection System (YOLOv8) (GitHub | Demo)</span>
+        <span class="job-dates">2025</span>
+      </div>
+      <ul class="job-responsibilities">
+        <li>Built a high-accuracy object detection system using YOLOv8, designed for real-time perception in a simulated space station environment.</li>
+        <li>Trained and optimized multiple class-specific detection models to reduce false positives, achieving mAP@50 of 0.983.</li>
+        <li>Deployed the complete pipeline as a web-based application using FastAPI (backend) and React.js (frontend) for real-time inference.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="job-header">
+        <span class="job-title">Embedded Systems: Hand Gesture Controlled Robotic Car (GitHub | Demo)</span>
+        <span class="job-dates">2024</span>
+      </div>
+      <ul class="job-responsibilities">
+        <li>Designed and built a gesture-controlled robotic car using Arduino, with a wearable controller based on the ADXL335 accelerometer for real-time motion sensing.</li>
+        <li>Implemented wireless communication using nRF24L01 RF modules to transmit gesture data and control vehicle movement via an L298N motor driver.</li>
+        <li>Improved system stability by handling gesture calibration, sensor noise filtering, and synchronization between transmitter and receiver units.</li>
       </ul>
     </div>
   </section>
+
+  <section class="section">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <div class="job-header">
+        <span class="job-title">Data Analyst Intern - AAP Pharma, Rohini</span>
+        <span class="job-dates">Sept 2025 - Oct 2025</span>
+      </div>
+      <ul class="job-responsibilities">
+  <li>Analyzed the company’s business tender data using Python and Excel to identify trends, inconsistencies, and relevant insights supporting internal decision-making.</li>
+  <li>Designed and maintained weekly interactive dashboards and reports to track key metrics, improving data accessibility and reducing manual reporting effort for stakeholders.</li>
+</ul>
+    </div>
+  </section>
+
 
   <section class="section">
     <h2>Certifications</h2>
@@ -283,46 +337,6 @@
   </section>
 
   <section class="section">
-    <h2>Academic Projects</h2>
-    <div class="experience-item">
-      <div class="job-header">
-        <span class="job-title">Computer Vision: Object Detection Model for Space Station</span>
-        <span class="job-dates">2025</span>
-      </div>
-      <ul class="job-responsibilities">
-        <li>Engineered a high-accuracy object detection model powered by YOLOv8, tailored to detect diverse objects in a simulated space station environment.</li>
-        <li>Adopted a multi-model approach, training separate YOLOv8 models for different object classes to improve precision and minimize false positives. Achieved a mean Average Precision (mAP@50) of 0.983, reflecting strong model performance and reliability.</li>
-        <li>Deployed the system as a web application with FastAPI (backend) and React.js (frontend), enabling real-time detection via browser interface. Demonstrated expertise in computer vision, deep learning, model deployment, and full-stack development.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="job-header">
-        <span class="job-title">Embedded Systems: Hand Gesture Controlled Car</span>
-        <span class="job-dates">2024</span>
-      </div>
-      <ul class="job-responsibilities">
-        <li>Prototyped a gesture-based wireless robotic car leveraging embedded systems and real-time motion control. Engineered a wearable controller based on the ADXL335 accelerometer sensor, transmitting gesture data via nRF24L01 RF modules to a receiver on the car.</li>
-        <li>Used Arduino to process motion data and operate the L298N motor driver, enabling accurate speed and movement based on hand gestures.</li>
-        <li>Addressed challenges such as gesture calibration, noise filtering, and synchronization of hardware components, ensuring smooth and responsive operation.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="job-header">
-        <span class="job-title">Embedded Systems: Labyrinth – Maze Navigation</span>
-        <span class="job-dates">2022</span>
-      </div>
-      <ul class="job-responsibilities">
-        <li>Constructed a physical maze platform that tilts along X and Y axes in response to joystick input.</li>
-        <li>Integrated servo motors with Arduino for directional management and calibrated tilt angles for smooth maze navigation.</li>
-        <li>Programmed real-time control logic to translate joystick movement into precise servo angle adjustments.</li>
-        <li>Enhanced engagement through intuitive control mechanics and responsive hardware interaction.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section">
     <h2>Education</h2>
     <div class="education-item">
       <div>
@@ -347,11 +361,15 @@
     <h2>Volunteering</h2>
     <div class="experience-item">
       <div class="job-header">
-        <span class="job-title">Content Creation Volunteer – GDG Noida</span>
+        <span class="job-title">GDG Noida</span>
         <span class="job-dates">Jul 2024 - Present</span>
       </div>
       <ul class="job-responsibilities">
-        <li>Collaborated with GDG Noida’s creative team to produce 20+ engaging videos across short-form and long-form formats, boosting social media engagement by 30% and supporting branding, outreach, and community growth.</li>
+        <li>Being part of India's largest growing Google Developer Group (GDG) community, 
+          contributing to local tech events and initiatives.</li>
+        <li>Collaborated with GDG Noida’s video team to produce 30+ professional videos across 
+          short-form and long-form formats, boosting social media engagement by 800%, supporting branding, 
+          outreach, and community growth.</li>
       </ul>
     </div>
   </section>

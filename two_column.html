@@ -7,7 +7,7 @@
   <style>
     @page {
       size: A4;
-      margin: 14mm;
+      margin: 12mm;
     }
     body {
       font-family: Arial, sans-serif;
@@ -113,7 +113,11 @@
       clear: both;
       margin-top: 0;
     }
-
+    @media print {
+      body {
+        zoom: 1.02;
+      }
+}
   </style>
 </head>
 <body>
@@ -185,7 +189,7 @@
       <div class="section">
   <h2>Salesforce Expertise</h2>
   <ul>
-    <li><strong>Data Modeling</strong>: Custom objects, fields, relationships, record types, page layouts</li>
+    <li><strong>Data Modeling</strong>: Custom Objects, Fields, Relationships, Record Types, Page Layouts</li>
     <li><strong>User & Data Access</strong>: Roles, Profiles, Permission Sets, OWD, Sharing Rules, Queues and Groups</li>
     <li><strong>Development</strong>: Apex Triggers, Apex Classes, Batch Apex, Future Methods, Queueable Apex, Apex Scheduler</li>
     <li><strong>Sales & Service Cloud</strong>: Lead-to-order lifecycle, case management, email-to-case, web-to-case</li>
